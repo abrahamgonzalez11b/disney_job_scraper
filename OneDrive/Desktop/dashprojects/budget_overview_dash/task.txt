@@ -1,0 +1,69 @@
+
+Case Scenario: Budget Overview Dashboard Request
+
+From: Department Chair
+To: Budget Analyst
+Subject: Request for Monthly Budget Dashboard
+
+Background:
+As department chair, I need to routinely present a monthly overview of our budget usage to the Dean. 
+I want to make this visual, easy to understand, and professional — something I can glance at and immediately see how we're doing.
+
+You’ve been tasked to build a simple, beginner-friendly dashboard as a prototype.
+
+Your Task:
+Create a Budget vs. Actual Dashboard that includes:
+
+1. Three KPI cards at the top:
+   - Total Budget
+   - Total Actual
+   - Total Variance (Budget - Actual)
+
+2. A bar chart below comparing Budget vs. Actual across each month.
+
+3. The data will be pulled from a CSV containing:
+   - Month (e.g., "2022-01", "2022-02", etc.)
+   - Budget (float)
+   - Actual (float)
+
+Requirements
+
+You must use:
+- The official documentation for Dash and Plotly:
+  - Dash Core Docs: https://dash.plotly.com/
+  - Plotly Express Charts: https://plotly.com/python/plotly-express/
+
+You are expected to:
+- Build a small Dash app (single page)
+- Use Dash Bootstrap for styling
+- Reference documentation (above) to learn:
+  - How to display KPI metrics (hint: use Dash Bootstrap Cards)
+  - How to create grouped bar charts
+  - How to use external_stylesheets to load a theme
+
+Deliverables
+1. Python code in app.py
+2. A sample CSV in /data/
+3. A requirements.txt with your used libraries
+4. A short README with a screenshot and steps to run
+
+Success Criteria
+- When I run the app and open the browser, I should see:
+  - A title
+  - Three clean KPIs
+  - A grouped bar chart (Budget vs Actual) with readable labels
+- The dashboard should load cleanly without errors
+- The code should be clean and readable (with basic comments)
+
+Hints (but don’t use unless stuck)
+- KPI cards → dash-bootstrap-components → https://dash-bootstrap-components.opensource.faculty.ai/docs/components/card/
+- Grouped bar chart → Plotly Express → https://plotly.com/python/bar-charts/#grouped-bar-chart
+
+Your Analyst Mindset
+Before you write code, ask:
+- What questions will this dashboard help the chair answer?
+- What visuals best communicate this?
+- Can I justify each component with a reason?
+- Am I referencing docs before ChatGPT?
+
+-- Analyst challenge starts now.
